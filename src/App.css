@@ -1,38 +1,106 @@
-.App {
+body {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.generator{
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 3rem;
+    
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.generator .title{
+    text-align: center;
+    margin-bottom: 2rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.inputs {
   display: flex;
   flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem; 
+  border: 1px solid rgb(223, 223, 223);
+  border-radius: 5px;
+  padding: 1.25rem;
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+.generate {
+  width: 90%;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  background-color: unset;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1rem;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  border-radius: 15px;
+  background-color: dodgerblue;
+  color: white;
+  font-weight: 500;
+  padding: .25rem;
+  cursor: pointer;
+  transition: ease-in-out .2s;
+  border: 1px solid transparent;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.generate:hover{
+    box-shadow: none;
+    background-color: rgb(11, 114, 218);
+}
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.input-group2 {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 0.5rem;
 }
+.input-group2 .range {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.input-group2 .range span {
+  padding: 0.25rem;
+  border-radius: 5px;
+}
+.show{
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    border-radius: 25px;
+    min-width: 25rem;
+}
+.show .copypassword{
+    display: flex;
+    margin: auto;
+    width: fit-content;
+    align-items: center;
+    gap:1rem;
+}
+.show .copypassword button{
+    width: fit-content;
+    height: fit-content;
+    background-color: unset;
+    border: none;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 2px 10px 2px 10px;
+    color: ghostwhite;
+    color:rgb(55, 56, 56);
+    font-size:.91rem;
+    cursor: pointer;
 }
